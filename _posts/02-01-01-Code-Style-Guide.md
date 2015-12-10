@@ -24,7 +24,7 @@ Terwijl het nieuwere, het maakt grote verbeteringen in de prestaties, waardoor d
 
 Je kan phpcs zelf laten testen door:
 
-    phpcs -sw --standard=PSR2 file.php
+    phpcs -sw --standard=PSR2 bestand.php
 
 Het zal de fouten laten zien, en ook hoe je deze kan oplossen.
 Het kan ook nuttig zijn om dit commando in een git hook te doen.
