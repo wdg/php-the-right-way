@@ -3,56 +3,56 @@ isChild: true
 anchor:  command_line_interface
 ---
 
-## Command Line Interface {#command_line_interface_title}
+## Command Line Interface (Opdrachtregel) {#command_line_interface_title}
 
-PHP was created to write web applications, but is also useful for scripting command line interface (CLI) programs.
-Command line PHP programs can help automate common tasks like testing, deployment, and application administration.
+PHP is gemaakt om webapplicaties te schrijven, maar is ook handig voor scripting command line interface (CLI) programma's.
+Command line PHP-programma's kan helpen bij het automatiseren van veel voorkomende taken, zoals het testen, implementatie, en applicatiebeheer.
 
-CLI PHP programs are powerful because you can use your app's code directly without having to create and secure a web
-GUI for it. Just be sure **not** to put your CLI PHP scripts in your public web root!
+CLI PHP-programma's zijn krachtig, omdat u de code van uw app kunt gebruiken direct zonder te maken en zorgen voor een web-
+GUI voor. Zet zeker **niet** uw CLI PHP scripts in uw publieke web root!
 
-Try running PHP from your command line:
+Probeer het uitvoeren van PHP uit uw opdrachtregel:
 
 {% highlight console %}
 > php -i
 {% endhighlight %}
 
-The `-i` option will print your PHP configuration just like the [`phpinfo()`][phpinfo] function.
+De `-i` optie zal uw PHP configuratie af te drukken, net als de [`phpinfo()`][phpinfo] functie.
 
-The `-a` option provides an interactive shell, similar to ruby's IRB or python's interactive shell. There are a number
-of other useful [command line options][cli-options], too.
+De `-a` optie biedt een interactieve shell, vergelijkbaar met Ruby's IRB of python interactieve shell. Er zijn een aantal andere [opdrachtregel opties][cli-options].
 
-Let's write a simple "Hello, $name" CLI program. To try it out, create a file named `hello.php`, as below.
+Laten we schrijven een eenvoudige "Hallo, $naam" CLI-programma. Om het uit te proberen, maak dan een bestand met de naam `hallo.php`, zoals hieronder.
 
 {% highlight php %}
 <?php
 if ($argc !== 2) {
-    echo "Usage: php hello.php [name].\n";
+    echo "Gebruik: php hallo.php [naam].\n";
     exit(1);
 }
 $name = $argv[1];
-echo "Hello, $name\n";
+echo "Hallo, $name\n";
+?>
 {% endhighlight %}
 
-PHP sets up two special variables based on the arguments your script is run with. [`$argc`][argc] is an integer
-variable containing the argument *count* and [`$argv`][argv] is an array variable containing each argument's *value*.
-The first argument is always the name of your PHP script file, in this case `hello.php`.
+PHP stelt twee speciale variabelen op basis van de argumenten van je script wordt uitgevoerd met. [`$argc`][argc] is een integer
+variabele met het argument *count* en [`$argv`][argv] is eenvariabele met elk argument van *waarde*.
+Het eerste argument is altijd de naam van uw PHP-script, in dit geval `hallo.php`.
 
-The `exit()` expression is used with a non-zero number to let the shell know that the command failed. Commonly used
-exit codes can be found [here][exit-codes].
+De `exit()` uitdrukking wordt gebruikt met een niet-nul getal laat het reservoir dat de opdracht is mislukt. Algemeen gebruikt
+exit codes kunnen [hier][exit-codes] gevonden worden.
 
-To run our script, above, from the command line:
+Om ons bovenstaande script uit te voeren, vanaf de opdrachtregel type:
 
 {% highlight console %}
-> php hello.php
-Usage: php hello.php [name]
-> php hello.php world
-Hello, world
+> php hallo.php
+Gebruik: php hallo.php [naam]
+> php hallo.php wereld
+Hallo, Wereld
 {% endhighlight %}
 
 
- * [Learn about running PHP from the command line][php-cli]
- * [Learn about setting up Windows to run PHP from the command line][php-cli-windows]
+ * [Leer meer over php vanaf de opdrachtregel][php-cli]
+ * [Leer meer over het opzetten van PHP op de windows opdrachtregel][php-cli-windows]
 
 
 [phpinfo]: http://php.net/function.phpinfo
