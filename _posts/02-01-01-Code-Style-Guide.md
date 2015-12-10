@@ -2,47 +2,35 @@
 anchor: code_style_guide
 ---
 
-# Code Style Guide {#code_style_guide_title}
+# Code-stijl Gids {#code_style_guide_title}
 
-The PHP community is large and diverse, composed of innumerable libraries, frameworks, and components. It is common for
-PHP developers to choose several of these and combine them into a single project. It is important that PHP code adhere
-(as close as possible) to a common code style to make it easy for developers to mix and match various libraries for
-their projects.
+De PHP-gemeenschap is groot en divers, bestaande uit talloze bibliotheken, frameworks en componenten. Het is gebruikelijk dat PHP ontwikkelaars een aantal van deze en te combineren in een enkel project. Het is belangrijk dat PHP-code werken aan een manier om (zo dicht als mogelijk) een gemeenschappelijke code stijl om het makkelijk maken, zodat het voor ontwikkelaars makkelijker is om te mixen en matchen tussen verschillende componenten in hun projecten.
 
-The [Framework Interop Group][fig] has proposed and approved a series of style recommendations. Not all of them related
-to code-style, but those that do are [PSR-0][psr0], [PSR-1][psr1], [PSR-2][psr2] and [PSR-4][psr4]. These
-recommendations are merely a set of rules that some projects like Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK,
-FuelPHP, Lithium, etc are starting to adopt. You can use them for your own projects, or continue to use your own
-personal style.
+De [Framework Interop Group][fig] heeft een reeks aanbevelingen qua code-stijl goedgekeurd. Niet alle van hen zijn gerelateerd aan de code-stijl, maar die dat wel doen zijn [PSR-0][psr0], [PSR-1][psr1], [PSR-2][psr2] en [PSR-4][psr4]. Deze aanbevelingen zijn slechts een set van regels die sommige projecten zoals Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium, etc gebruiken. U kunt ze gebruiken voor je eigen projecten, of doorgaan met uw eigen gebruik persoonlijke stijl.
 
-Ideally you should write PHP code that adheres to a known standard. This could be any combination of PSR's, or one
-of the coding standards made by PEAR or Zend. This means other developers can easily read and work with your code, and
-applications that implement the components can have consistency even when working with lots of third-party code.
+Idealiter moet je PHP-code schrijven die voldoet aan een bekende standaard. Dit kan een combinatie van PSR's zijn of een van hen, of code-stijl zoals aangegeven door PEAR of Zend. Dit maakt het voor andere ontwikkelaars makkelijker om jouw code te lezen en deze te gebruiken in hun applicaties.
 
-* [Read about PSR-0][psr0]
-* [Read about PSR-1][psr1]
-* [Read about PSR-2][psr2]
-* [Read about PSR-4][psr4]
-* [Read about PEAR Coding Standards][pear-cs]
-* [Read about Symfony Coding Standards][symfony-cs]
+* [Lees over PSR-0][psr0]
+* [Lees over PSR-1][psr1]
+* [Lees over PSR-2][psr2]
+* [Lees over PSR-4][psr4]
+* [Lees over PEAR Coding Standards][pear-cs]
+* [Lees over Symfony Coding Standards][symfony-cs]
 
-You can use [PHP_CodeSniffer][phpcs] to check code against any one of these recommendations, and plugins for text
-editors like [Sublime Text 2][st-cs] to be given real time feedback.
+Je kan [PHP_CodeSniffer][phpcs] gebruiken om jouw code te controleren of deze voldoet aan een van deze aanbevelingen, en plugins voor tekst bewerkers zoals [Sublime Text 2][st-cs] geven continue feedback.
+Je kan de code-stijl laten repareren door [PHP Coding Standards Fixer][phpcsfixer] dit tooltje heeft een zeer goed getest code bestand.
+Een andere optie is [php.tools][phptools], die populair is geworden door de [sublime-phpfmt][sublime-phpfmt] plugin.
+Terwijl het nieuwere, het maakt grote verbeteringen in de prestaties, waardoor de code real-time en vloeiender woord gecontroleerd.
 
-You can fix the code layout automatically by using one of the two following tools. One is the [PHP Coding Standards Fixer][phpcsfixer] which has a very well tested codebase. 
-Another option is [php.tools][phptools], which is made popular by the [sublime-phpfmt][sublime-phpfmt] editor plugin. While being newer, it makes great improvements in performance, meaning real-time editor fixing is more fluid.
-
-And you can run phpcs manually from shell:
+Je kan phpcs zelf laten testen door:
 
     phpcs -sw --standard=PSR2 file.php
 
-It will show errors and descriptions how to fix them.
-It can also be helpful to include this command in a git hook.
-That way branches which contain violations against the chosen standard cannot enter the repository
-until those violations have been fixed.
+Het zal de fouten laten zien, en ook hoe je deze kan oplossen.
+Het kan ook nuttig zijn om dit commando in een git hook te doen.
+Op die manier zorg je altijd dat de code de gekozen standaard bevatten, en eraan voldoet.
 
-English is preferred for all symbol names and code infrastructure. Comments may be written in any language easily
-readable by all current and future parties who may be working on the codebase.
+Engels heeft de voorkeur voor alle symbool namen en code-infrastructuur. Reacties kunnen in elke taal geschreven worden gemakkelijk leesbaar door alle huidige en toekomstige partijen die kunnen werken op de codebase.
 
 
 [fig]: http://www.php-fig.org/
