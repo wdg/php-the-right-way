@@ -3,21 +3,14 @@ isChild: true
 anchor:  windows_setup
 ---
 
-## Windows Setup {#windows_setup_title}
+## Windows Installatie {#windows_setup_title}
 
-You can download the binaries from [windows.php.net/download][php-downloads]. After the extraction of PHP, it is recommended to set the [PATH][windows-path] to the root of your PHP folder (where php.exe is located) so you can execute PHP from anywhere.
+Je kan de uitvoerbare bestanden van [windows.php.net/download][php-downloads] downloaden. Na installatie van PHP is het verstandig om de [PATH][windows-path] in te stellen naar de map waar `php.exe` zich bevindt zodat je php overal kan uitvoeren.
 
-For learning and local development you can use the built in webserver with PHP 5.4+ so you don't need to worry about
-configuring it. If you would like an "all-in-one" which includes a full-blown webserver and MySQL too then tools such
-as the [Web Platform Installer][wpi], [XAMPP][xampp], [EasyPHP][easyphp] and [WAMP][wamp] will
-help get a Windows development environment up and running fast. That said, these tools will be a little different from
-production so be careful of environment differences if you are working on Windows and deploying to Linux.
+Voor leren en lokaal publiceren kan je de ingebouwde webserver gebruiken vanaf PHP 5.4 en hoger, zodat je je niet druk hoeft te maken over configuraties. Als je een "Alles-in-Een" oplossing wilt kun je kiezen uit o.a. [Web Platform Installer][wpi], [XAMPP][xampp], [EasyPHP][easyphp] en [WAMP][wamp] deze tools zijn wel iets anders dan een standaard php installatie, wees voorzichting als je bouwt in een Windows omgeving en de server voor publicatie Linux is.
 
-If you need to run your production system on Windows then IIS7 will give you the most stable and best performance. You
-can use [phpmanager][phpmanager] (a GUI plugin for IIS7) to make configuring and managing PHP simple. IIS7 comes with
-FastCGI built in and ready to go, you just need to configure PHP as a handler. For support and additional resources
 there is a [dedicated area on iis.net][php-iis] for PHP.
-
+Als het productiesysteem op windows draait dan geeft ISS7 je de meest stabiele omgeving en snelheid. Je kan [phpmanager][phpmanager] gebruiken (een Grafishe plugin voor ISS7) om PHP makkelijk te configureren. ISS7 komy standaard met FastCGI ingebouwd en klaar voor gebruik, je hoeft PHP alleen maar als handler in te stellen. Voor support en andere informatie kijk dan op [iis.net][php-iis].
 
 [php-downloads]: http://windows.php.net/download/
 [windows-path]: http://www.windows-commandline.com/set-path-command-line/
