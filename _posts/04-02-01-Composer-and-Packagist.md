@@ -99,8 +99,7 @@ Om meldingen over nieuwe versies te ontvangen kunt u zich aanmelden voor [Versio
 
 ### Checking your dependencies for security issues
 
-The [Security Advisories Checker] is a web service and a command-line tool, both will examine your `composer.lock`
-file and tell you if you need to update any of your dependencies.
+[Security Advisories Checker] is a web service en opdrachtregel tool, beide zullen ze uw `composer.lock` bestand nakijken en vertellen als u een van de vereisten moet updaten
 
 ### Handling global dependencies with Composer
 
