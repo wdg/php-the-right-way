@@ -84,22 +84,18 @@ Nu kunt u uw project vereisten te gebruiken, en ze zullen worden on-demand worde
 
 ### Updaten van vereisten
 
-Composer creates a file called `composer.lock` which stores the exact version of each package it
-downloaded when you
-first ran `composer install`. If you share your project with other coders and the `composer.lock` file
-is part of your distribution, when they run `composer install` they'll get the same versions as you. 
-To update your dependencies, run `composer update`.
+Composer creërt een bestand `composer.lock` waarin de exacte versie van elk pakket in woord opgeslagen het woord gecreërt waneer je voor het eerst `composer install` uitvoerd. Als je je project deelt dan zullen andere programmeurs ook jouw `composer.lock` bestand nodig hebben waneer hun `composer install` uitvoeren dan krijgen zij dezelfde versie als u. Om de vereisten te updaten voert u `composer update` uit.
 
 This is most useful when you define your version requirements flexibly. For instance a version 
 requirement of `~1.8` means "anything newer than `1.8.0`, but less than `2.0.x-dev`". You can also use 
 the `*` wildcard as in `1.8.*`. Now Composer's `composer update` command will upgrade all your
 dependencies to the newest version that fits the restrictions you define.
 
-### Update Notifications
+Dit is het gemakkelijkst als uw versie vereisten flexibel zijn. Als voorbeeld als een project een eis heeft van versie `~1.8` dan betekend dit "Alles nieuwer dan `1.8.0` maar `2.0.x-dev` niet". Je kan ook `*` als joker gebruiken als in `1.8.*`. Nu is `composer update` zo ingesteld dat ze naar de nieuwste versie van uw eis geüpdatet worden
 
-To receive notifications about new version releases you can sign up for [VersionEye], a web service
-that can monitor your GitHub and BitBucket accounts for `composer.json` files and send emails with new
-package releases.
+### Update Kennisgeving
+
+Om meldingen over nieuwe versies te ontvangen kunt u zich aanmelden voor [VersionEye], een webservice dat je GitHub en BitBucket accounts kunnen monitoren voor `composer.json` bestanden en stuurt e-mails als er een nieuwere versie beschikbaar is.
 
 ### Checking your dependencies for security issues
 
