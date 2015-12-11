@@ -3,7 +3,7 @@ isChild: true
 anchor:  command_line_interface
 ---
 
-## Command Line Interface (Opdrachtregel) {#command_line_interface_title}
+## Opdrachtregel {#command_line_interface_title}
 
 PHP is gemaakt om webapplicaties te schrijven, maar is ook handig voor scripting command line interface (CLI) programma's.
 Command line PHP-programma's kan helpen bij het automatiseren van veel voorkomende taken, zoals het testen, implementatie, en applicatiebeheer.

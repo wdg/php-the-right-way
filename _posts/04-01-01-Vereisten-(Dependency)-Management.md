@@ -2,7 +2,7 @@
 anchor: dependency_management
 ---
 
-# Pakketten (Dependency) Management {#dependency_management_title}
+# Vereisten (Dependency) Management {#dependency_management_title}
 
 Er zijn een hoop van PHP bibliotheken, frameworks en componenten om uit te kiezen. Uw project zal waarschijnlijk een aantal van hen gebruiken - dat zijn project Pakketten. Tot voor kort had PHP geen goede manier om dit te beheren. Zelfs als je ze handmatig beheerd, je had nog steeds zorgen te maken over autoloaders.
 Dat is niet langer een probleem.

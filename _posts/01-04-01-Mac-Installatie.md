@@ -3,7 +3,7 @@ isChild: true
 anchor:  mac_setup
 ---
 
-## Mac Setup {#mac_setup_title}
+## Mac Installatie {#mac_setup_title}
 
 OS X komt met PHP al geinstalleerd, deze loopt normaal een beetje acter op de laatste stabiele versie, Mac OS X Mavericks komt met versie 5.4.17, Mac OS X Yosemite komt met versie 5.5.9, en Mac OS X komt met 5.5.29, maar nu PHP 7.0 uit is is, is dat meestal niet goed genoeg.
 
