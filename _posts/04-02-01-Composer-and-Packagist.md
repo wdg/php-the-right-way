@@ -101,9 +101,9 @@ Om meldingen over nieuwe versies te ontvangen kunt u zich aanmelden voor [Versio
 
 [Security Advisories Checker] is a web service en opdrachtregel tool, beide zullen ze uw `composer.lock` bestand nakijken en vertellen als u een van de vereisten moet updaten
 
-### Omgaan met mondiale afhankelijkheden met Composer
+### Omgaan met systeem brede vereisten met Composer
 
-Composer kan ook omgaan met mondiale afhankelijkheden en hun binaries. Het gebruik is straight-forward, alles wat je nodig hebt te doen is het voorvoegsel aan uw commando `global`. 
+Composer kan ook omgaan met systeem brede vereisten en hun binaries. Het gebruik is straight-forward, alles wat je nodig hebt te doen is het voorvoegsel aan uw commando `global`. 
 Als u bijvoorbeeld PHPUnit wilde installeren en hebben het beschikbaar hebben voor het hele systeem, zou je de volgende opdracht moeten uitvoeren:
 
 {% highlight console %}
