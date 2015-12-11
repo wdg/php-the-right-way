@@ -97,23 +97,20 @@ Dit is het gemakkelijkst als uw versie vereisten flexibel zijn. Als voorbeeld al
 
 Om meldingen over nieuwe versies te ontvangen kunt u zich aanmelden voor [VersionEye], een webservice dat je GitHub en BitBucket accounts kunnen monitoren voor `composer.json` bestanden en stuurt e-mails als er een nieuwere versie beschikbaar is.
 
-### Checking your dependencies for security issues
+### Het controleren van uw vereisten voor veiligheidsproblemen
 
 [Security Advisories Checker] is a web service en opdrachtregel tool, beide zullen ze uw `composer.lock` bestand nakijken en vertellen als u een van de vereisten moet updaten
 
-### Handling global dependencies with Composer
+### Omgaan met mondiale afhankelijkheden met Composer
 
-Composer can also handle global dependencies and their binaries. Usage is straight-forward, all you need
-to do is prefix your command with `global`. If per example you wanted to install PHPUnit and have it 
-available globally, you'd run the following command:
+Composer kan ook omgaan met mondiale afhankelijkheden en hun binaries. Het gebruik is straight-forward, alles wat je nodig hebt te doen is het voorvoegsel aan uw commando `global`. 
+Als u bijvoorbeeld PHPUnit wilde installeren en hebben het beschikbaar hebben voor het hele systeem, zou je de volgende opdracht moeten uitvoeren:
 
 {% highlight console %}
 composer global require phpunit/phpunit
 {% endhighlight %}
 
-This will create a `~/.composer` folder where your global dependencies reside. To have the installed
-packages' binaries available everywhere, you'd then add the `~/.composer/vendor/bin` folder to your 
-`$PATH` variable.
+Dit creërt een map `~/.composer` waar systeem brede vereisten worden geinstalleerd. Om het daadwerkelijk te kunnen gebruiken voeg dan `~/.composer/vendor/bin` aan uw `$PATH` variable toe.
 
 * [Learn about Composer]
 
