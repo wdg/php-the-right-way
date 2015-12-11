@@ -3,69 +3,58 @@ isChild: true
 anchor:  composer_and_packagist
 ---
 
-## Composer and Packagist {#composer_and_packagist_title}
+## Composer en Packagist {#composer_and_packagist_title}
 
-Composer is a **brilliant** dependency manager for PHP. List your project's dependencies in a `composer.json` file and,
-with a few simple commands, Composer will automatically download your project's dependencies and setup autoloading for
-you. Composer is analogous to NPM in the node.js world, or Bundler in the Ruby world.
+Composer is een **briljante** pakket manager voor PHP. Een lijst van afhankelijkheden van uw project in een `composer.json` bestand en, met een paar eenvoudige commando's, zal Composer automatisch afhankelijkheden van uw project en setup autoloading te downloaden
+u. Composer is analoog aan NPM in de node.js wereld of Bundler in de Ruby wereld.
 
-There are already a lot of PHP libraries that are compatible with Composer, ready to be used in your project. These
-"packages" are listed on [Packagist], the official repository for Composer-compatible PHP libraries.
+Er zijn al veel van PHP bibliotheken die compatibel zijn met Componist zijn, klaar om te worden gebruikt in uw project. Deze
+"pakketten" worden genoteerd op [Packagist], de officiële opslagplaats voor Composer-compatibele PHP bibliotheken.
 
-### How to Install Composer
+### Hoe installeer je Composer
 
-You can install Composer locally (in your current working directory) or globally (e.g. /usr/local/bin, recommended).
-Let's assume you want to install Composer globally:
+U kunt Composer lokaal te installeren (in uw huidige werkmap) of globaal (bijvoorbeeld / usr / local / bin, aanbevolen).
+Laten we aannemen dat u wilt Composer systeem-wijd installeren:
 
 {% highlight console %}
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 {% endhighlight %}
 
-<strong>Note:</strong> If the above fails due to permissions, run the `mv` line again with `sudo`.
+<strong>Notitie:</strong> Als het commando niet werkt door een ontbrekende rechten gebruik dan `sudo` voor mv
 
-This will download `composer.phar` (a PHP binary archive). You can run this with `php` to manage your project
-dependencies.
-<strong>Please Note:</strong> If you pipe downloaded code directly into an interpreter, please read the
-code online first to confirm it is safe.
+Dit zal `composer.phar` (een PHP binary archief) te downloaden. U kunt deze openenen met `php` om uw project te beheren.
+<strong>Let Op:</strong> Als u direct een code download via de opdrachtregel lees dan eerst de code om te kijken of deze veilig is.
 
-#### Installing on Windows
+#### Installeren op Windows
 
-For Windows users the easiest way to get up and running is to use the [ComposerSetup] installer, which
-performs a global install and sets up your `$PATH` so that you can just call `composer` from any
-directory in your command line.
+Voor Windows gebruikers is [ComposerSetup] het makkelijkst, na installatie is deze bruikbaar in de opdrachtregel.
 
-### How to Install Composer (manually)
+### Hoe installeer je Composer (Handmatig)
 
-Manually installing Composer is an advanced technique; however, there are various reasons why a 
-developer might prefer this method vs. using the interactive installation routine. The interactive
-installation checks your PHP installation to ensure that:
+Handmatig installeren van Composer is een geavanceerde techniek; Er zijn echter verschillende redenen waarom een ontwikkelaar Deze methode kan de voorkeur heeft in tegenstelling met de interactieve installatieprocedure. De interactieve installatie controleert uw PHP-installatie om ervoor te zorgen dat:
 
-- a sufficient version of PHP is being used
-- `.phar` files can be executed correctly
-- certain directory permissions are sufficient
-- certain problematic extensions are not loaded
-- certain `php.ini` settings are set
+- Een goede versie van PHP wordt gebruikt
+- `.phar` Bestanden correct kan worden uitgevoerd
+- Bepaalde map permissies zijn ingesteld
+- Bepaalde problematische extensies zijn niet geladen
+- Bepaalde `php.ini` instellingen zijn ingesteld
 
-Since a manual installation performs none of these checks, you have to decide whether the trade-off is 
-worth it for you. As such, below is how to obtain Composer manually:
+Aangezien een handmatige installatie geen van deze controles uitvoerd, moet u beslissen of de trade-off is de moeite waard voor u. Als zodanig, hieronder staat hoe Composer handmatig te verkrijgen is:
 
 {% highlight console %}
 curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
 chmod +x $HOME/local/bin/composer
 {% endhighlight %}
 
-The path `$HOME/local/bin` (or a directory of your choice) should be in your `$PATH` environment 
-variable. This will result in a `composer` command being available.
-
-When you come across documentation that states to run Composer as `php composer.phar install`, you can
-substitute that with:
+Het pad `$HOME/local/bin` (of een map van uw keuze) moet in uw `$PATH` voorkomen. Dit resulteert in een 'composer` commando.
+Als je documentatie tegenkomt, die aangeeft Composer draaien als `php composer.phar install`, kunt u dat vervangen dat met:
 
 {% highlight console %}
 composer install
 {% endhighlight %}
 
-This section will assume you have installed composer globally.
+Deze sectie zal aannemen dat u Composer systeem-breed geïnstalleerd hebt.
 
 ### How to Define and Install Dependencies
 
