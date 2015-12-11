@@ -58,7 +58,7 @@ Deze sectie zal aannemen dat u Composer systeem-breed geïnstalleerd hebt.
 
 ### Hoe defineren en Installeren van Vereisten (Dependencies)
 
-Composer houd een oogje op de vereisten van uw project in een bestand genaamd `composer.json`, U kunt het handmatig bewerken of via Composer zelf. Het `composer require` voegt een afhankelijkheid/pakket toe aan uw project.
+Composer houd een oogje op de vereisten van uw project in een bestand genaamd `composer.json`, U kunt het handmatig bewerken of via Composer zelf. Het `composer require` commando voegt een vereiste toe aan uw project.
 Als u geen `composer.json` bestand heeft dan maakt Composer deze voor u aan.
 Hieronder een voorbeeld om [Twig] te vereisen
 
