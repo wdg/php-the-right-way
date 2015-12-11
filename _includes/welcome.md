@@ -40,7 +40,6 @@ _PHP: The Right Way_ is vertaald in vele talen zoals:
 
 ## Hoe te helpen
 
-Help make this website the best resource for new PHP programmers!
 Help om deze website de beste refferrentie te worden voor PHP Programmeurs!
  
 Of [Help op GitHub][1]
