@@ -23,6 +23,7 @@ mv composer.phar /usr/local/bin/composer
 <strong>Notitie:</strong> Als het commando niet werkt door een ontbrekende rechten gebruik dan `sudo` voor mv
 
 Dit zal `composer.phar` (een PHP binary archief) te downloaden. U kunt deze openenen met `php` om uw project te beheren.
+
 <strong>Let Op:</strong> Als u direct een code download via de opdrachtregel lees dan eerst de code om te kijken of deze veilig is.
 
 #### Installeren op Windows
