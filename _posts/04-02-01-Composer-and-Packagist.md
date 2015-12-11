@@ -12,7 +12,7 @@ Er zijn al veel van PHP bibliotheken die compatibel zijn met Composer zijn, klaa
 
 ### Hoe installeer je Composer
 
-U kunt Composer lokaal te installeren (in uw huidige werkmap) of globaal (bijvoorbeeld / usr / local / bin, aanbevolen).
+U kunt Composer lokaal te installeren (in uw huidige werkmap) of globaal (bijvoorbeeld /usr/local/bin, aanbevolen).
 Laten we aannemen dat u wilt Composer systeem-wijd installeren:
 
 {% highlight console %}
