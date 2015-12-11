@@ -1,58 +1,55 @@
-# Welcome
+# Welkom
 
-There's a lot of outdated information on the Web that leads new PHP users astray,
-propagating bad practices and insecure code. _PHP: The Right Way_ is an easy-to-read,
-quick reference for PHP popular coding standards, links to authoritative tutorials
-around the Web and what the contributors consider to be best practices at the present
-time.
+Er is een hoop verouderde informatie op het web die nieuwe PHP gebruikers laat dwalen,
+propageren slechte praktijken en onveilige code. _PHP: De juiste manier_ is een makkelijk te lezen,
+snelle referentie voor PHP populaire codering normen, links naar gezaghebbende tutorials
+rond het web en wat de medewerkers beschouwen als beste praktijken zijn op het dit moment.
 
-_There is no canonical way to use PHP_. This website aims to introduce new PHP
-developers to some topics which they may not discover until it is too late, and aims
-to give seasoned pros some fresh ideas on those topics they've been doing for years
-without ever reconsidering. This website will also not tell you which tools to use, but
-instead offer suggestions for multiple options, when possible explaining the differences
-in approach and use-case.
+_Er is geen standaard regel om PHP te gebruiken_. Deze website is bedoeld om nieuwe PHP 
+ontwikkelaars om een aantal onderwerpen te leren, die zij anders niet kunnen ontdekken, totdat het te laat is, en de doelstellingen van doorgewinterde profs wat frisse ideeën op te doen die onderwerpen waar ze wat aan hebben voor de komende jaren. Deze website zal u ook niet vertellen welke hulpmiddelen te gebruiken, maar in plaats daarvan bied deze website suggesties voor meerdere opties, en indien mogelijk het uitleggen van de verschillen in aanpak en use-case.
 
-This is a living document and will continue to be updated with more helpful information
-and examples as they become available.
 
-## Translations
+Dit is een levend document en zal veranderd worden als er nieuwe handige informatie beschikbaar is
 
-_PHP: The Right Way_ is translated into many different languages:
+## Translations (Vertalingen)
 
-* [English](http://www.phptherightway.com)
-* [Bulgarian](http://bg.phptherightway.com/)
-* [Chinese (Simplified)](http://laravel-china.github.io/php-the-right-way/)
-* [Chinese (Traditional)](http://laravel-taiwan.github.io/php-the-right-way)
-* [Dutch](http://wdg.github.io/php-the-right-way/)
-* [French](http://eilgin.github.io/php-the-right-way/)
-* [German](http://rwetzlmayr.github.io/php-the-right-way/)
-* [Indonesian](http://id.phptherightway.com/)
-* [Italian](http://it.phptherightway.com/)
-* [Japanese](http://ja.phptherightway.com)
-* [Korean](http://modernpug.github.io/php-the-right-way/)
-* [Persian](http://novid.github.io/php-the-right-way/)
-* [Polish](http://pl.phptherightway.com/)
-* [Portuguese](http://br.phptherightway.com/)
-* [Romanian](https://bgui.github.io/php-the-right-way/)
-* [Russian](http://getjump.github.io/ru-php-the-right-way)
-* [Serbian](http://phpsrbija.github.io/php-the-right-way/)
-* [Slovenian](http://sl.phptherightway.com)
-* [Spanish](http://phpdevenezuela.github.io/php-the-right-way/)
-* [Thai](https://apzentral.github.io/php-the-right-way/)
-* [Turkish](http://hkulekci.github.io/php-the-right-way/)
-* [Ukrainian](http://iflista.github.com/php-the-right-way/)
+_PHP: The Right Way_ is vertaald in vele talen zoals:
 
-## How to Contribute
+* [English (Engels)](http://www.phptherightway.com)
+* [Bulgarian (Bulgaars)](http://bg.phptherightway.com/)
+* [Chinese (Simplified) (Chinees, versimpeld)](http://laravel-china.github.io/php-the-right-way/)
+* [Chinese (Traditional) (Chinees, Traditioneel)](http://laravel-taiwan.github.io/php-the-right-way)
+* [Dutch (Nederlands)](http://wdg.github.io/php-the-right-way/)
+* [French (Frans)](http://eilgin.github.io/php-the-right-way/)
+* [German (Duits)](http://rwetzlmayr.github.io/php-the-right-way/)
+* [Indonesian (Indonesisch)](http://id.phptherightway.com/)
+* [Italian (Italiaans)](http://it.phptherightway.com/)
+* [Japanese (Japans)](http://ja.phptherightway.com)
+* [Korean (Koreaans)](http://modernpug.github.io/php-the-right-way/)
+* [Persian (Perzisch)](http://novid.github.io/php-the-right-way/)
+* [Polish (Pools)](http://pl.phptherightway.com/)
+* [Portuguese (Portugees)](http://br.phptherightway.com/)
+* [Romanian (Romeens)](https://bgui.github.io/php-the-right-way/)
+* [Russian (Russisch)](http://getjump.github.io/ru-php-the-right-way)
+* [Serbian (Siberisch)](http://phpsrbija.github.io/php-the-right-way/)
+* [Slovenian (Sloveens)](http://sl.phptherightway.com)
+* [Spanish (Spaans)](http://phpdevenezuela.github.io/php-the-right-way/)
+* [Thai (Thais)](https://apzentral.github.io/php-the-right-way/)
+* [Turkish (Turks)](http://hkulekci.github.io/php-the-right-way/)
+* [Ukrainian (Oekraïens)](http://iflista.github.com/php-the-right-way/)
 
-Help make this website the best resource for new PHP programmers! [Contribute on GitHub][1]
+## Hoe te helpen
 
-## Spread the Word!
+Help make this website the best resource for new PHP programmers!
+Help om deze website de beste refferrentie te worden voor PHP Programmeurs!
+ 
+Of [Help op GitHub][1]
 
-_PHP: The Right Way_ has web banner images you can use on your website. Show your support, and let new PHP developers
-know where to find good information!
+## Deel deze pagina!
 
-[See Banner Images][2]
+_PHP: De juiste manier_ heeft web banners die u kan gebruiken op uw website. Laat u medewerking zien, en laat nieuwe PHP ontwikkelaars weten waar ze goede informatie kunnen vinden!
+
+[Zie Banners][2]
 
 [1]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
-[2]: /banners.html
+[2]: banners.html
