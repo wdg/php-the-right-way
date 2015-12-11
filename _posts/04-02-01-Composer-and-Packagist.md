@@ -24,7 +24,7 @@ mv composer.phar /usr/local/bin/composer
 
 Dit zal `composer.phar` (een PHP binary archief) te downloaden. U kunt deze openenen met `php` om uw project te beheren.
 
-<strong>Let Op:</strong> Als u direct een code download via de opdrachtregel lees dan eerst de code om te kijken of deze veilig is.
+<strong>Let op:</strong> Als u direct een code download via de opdrachtregel lees dan eerst de code om te kijken of deze veilig is.
 
 #### Installeren op Windows
 
@@ -56,37 +56,33 @@ composer install
 
 Deze sectie zal aannemen dat u Composer systeem-breed geïnstalleerd hebt.
 
-### How to Define and Install Dependencies
+### Hoe defineren en Installeren van Vereisten (Dependencies)
 
-Composer keeps track of your project's dependencies in a file called `composer.json`. You can manage it
-by hand if you like, or use Composer itself. The `composer require` command adds a project dependency 
-and if you don't have a `composer.json` file, one will be created. Here's an example that adds [Twig]
-as a dependency of your project.
+Composer houd een oogje op de vereisten van uw project in een bestand genaamd `composer.json`, U kunt het handmatig bewerken of via Composer zelf. Het `composer require` voegt een afhankelijkheid/pakket toe aan uw project.
+Als u geen `composer.json` bestand heeft dan maakt Composer deze voor u aan.
+Hieronder een voorbeeld om [Twig] te vereisen
 
 {% highlight console %}
 composer require twig/twig:~1.8
 {% endhighlight %}
 
-Alternatively the `composer init` command will guide you through creating a full `composer.json` file
-for your project. Either way, once you've created your `composer.json` file you can tell Composer to
-download and install your dependencies into the `vendor/` directory. This also applies to projects 
-you've downloaded that already provide a `composer.json` file:
+U kunt ook de opdracht van de `composer init` leidt u door het creëren van een volledig `composer.json` bestand voor uw project. Hoe dan ook, als je eenmaal je `composer.json` kun je Composer vertellen om de vereisten te downloaden en te installeren in de `vendor/` map. Dit geld ook voor projecten die je gedownload hebt die al een `composer.json` bestand bevatten:
 
 {% highlight console %}
 composer install
 {% endhighlight %}
 
-Next, add this line to your application's primary PHP file; this will tell PHP to use Composer's 
-autoloader for your project dependencies.
+Vervolgens voeg deze regel aan primaire PHP-bestand van uw toepassing; dit zal PHP vertellen Composer's autoloader te gebruiken voor uw project vereisten.
 
 {% highlight php %}
 <?php
 require 'vendor/autoload.php';
+?>
 {% endhighlight %}
 
-Now you can use your project dependencies, and they'll be autoloaded on demand.
+Nu kunt u uw project vereisten te gebruiken, en ze zullen worden on-demand worden geladen.
 
-### Updating your dependencies
+### Updaten van vereisten
 
 Composer creates a file called `composer.lock` which stores the exact version of each package it
 downloaded when you
