@@ -21,7 +21,7 @@
     </head>
     <body>
         <header class="site-header">
-            <h1><a href="/">PHP <em>The Right Way</em></a></h1>
+            <h1><a href="/">PHP <em>De juiste manier</em></a></h1>
             <div class="build-date">Laatste Update: {{ site.time }}</div>
             <div class="share">
                 <a class="btn-share" href="https://twitter.com/intent/tweet?text=PHP+The+Right+Way&amp;url=http%3A%2F%2Fwww.phptherightway.com&amp;hashtags=PHP" target="_blank">Deel op Twitter</a>
@@ -33,11 +33,11 @@
             <input type="checkbox" id="toggle"/>
             <label for="toggle">Inhoudsopgave</label>
             <ul>
-                <li><a href="/#welcome">Welkom</a>
+                <li><a href="#welcome">Welkom</a>
                     <ul>
-                        <li><a href="/#translations">Vertalingen</a></li>
-                        <li><a href="/#how-to-contribute">Hoe kun je helpen</a></li>
-                        <li><a href="/#spread-the-word">Vertel het door!</a></li>
+                        <li><a href="#translations">Vertalingen</a></li>
+                        <li><a href="#how-to-contribute">Hoe kun je helpen</a></li>
+                        <li><a href="#spread-the-word">Vertel het door!</a></li>
                     </ul>
                 </li>
                 {% assign lastIsChild = false %}
@@ -49,7 +49,7 @@
                             {% assign insideSection = false %}
                         {% endif %}
                     {% endif %}
-                    <li><a href="/#{{ post.anchor }}">{{ post.title }}</a>
+                    <li><a href="#{{ post.anchor }}">{{ post.title }}</a>
                     {% if post.isChild %}
                         </li>
                     {% else %}
@@ -60,7 +60,7 @@
                 {% endfor %}
                     </ul>
                 </li>
-                <li><a href="/#credits">Door</a></li>
+                <li><a href="#credits">Door</a></li>
             </ul>
         </nav>
 
