@@ -4,7 +4,7 @@ isChild: true
 anchor:  php_and_utf8
 ---
 
-## Working with UTF-8 {#php_and_utf8_title}
+## Werken met UTF-8 {#php_and_utf8_title}
 
 _This section was originally written by [Alex Cabal](https://alexcabal.com/) over at 
 [PHP Best Practices](https://phpbestpractices.org/#utf-8) and has been used as the basis for our own UTF-8 advice_.
