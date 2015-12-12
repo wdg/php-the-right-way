@@ -6,16 +6,13 @@ anchor:  php_and_utf8
 
 ## Werken met UTF-8 {#php_and_utf8_title}
 
-_This section was originally written by [Alex Cabal](https://alexcabal.com/) over at 
-[PHP Best Practices](https://phpbestpractices.org/#utf-8) and has been used as the basis for our own UTF-8 advice_.
+_Deze sectie werd oorspronkelijk geschreven door [Alex Cabal](https://alexcabal.com/) over bij [PHP Best Practices](https://phpbestpractices.org/#utf-8) en is gebruikt als basis voor onze eigen UTF-8 advies._
 
-### There's no one-liner. Be careful, detailed, and consistent.
+### Er is geen one-liner. Wees voorzichtig, gedetailleerd en consistent.
 
-Right now PHP does not support Unicode at a low level. There are ways to ensure that UTF-8 strings are processed OK,
-but it's not easy, and it requires digging in to almost all levels of the web app, from HTML to SQL to PHP. We'll aim
-for a brief, practical summary.
+PHP ondersteunt nu noh geen Unicode op een laag niveau. Er zijn manieren om ervoor te zorgen dat UTF-8 strings worden verwerkt, maar het is niet gemakkelijk, en het vereist veel kunde in bijna alle niveaus van de web applicatie, van HTML naar SQL PHP. We zullen streven een korte, praktische samenvatting.
 
-### UTF-8 at the PHP level
+### UTF-8 op PHP niveau
 
 The basic string operations, like concatenating two strings and assigning strings to variables, don't need anything
 special for UTF-8. However most string functions, like `strpos()` and `strlen()`, do need special consideration. These
@@ -128,7 +125,8 @@ header('Content-Type: text/html; charset=UTF-8');
 </html>
 {% endhighlight %}
 
-### Further reading
+### Lees meer
+_De artikelene hieronder zijn Engelstalig_
 
 * [PHP Manual: String Operations](http://php.net/language.operators.string)
 * [PHP Manual: String Functions](http://php.net/ref.strings)
