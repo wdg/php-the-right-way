@@ -14,98 +14,80 @@ PHP ondersteunt nu noh geen Unicode op een laag niveau. Er zijn manieren om ervo
 
 ### UTF-8 op PHP niveau
 
-The basic string operations, like concatenating two strings and assigning strings to variables, don't need anything
-special for UTF-8. However most string functions, like `strpos()` and `strlen()`, do need special consideration. These
-functions often have an `mb_*` counterpart: for example, `mb_strpos()` and `mb_strlen()`. These `mb_*` strings are made
-available to you via the [Multibyte String Extension], and are specifically designed to operate on Unicode strings.
+De basis string operaties, als het samenvoegen van 2 strings en strings toewijzen aan variabelen, hebben niets speciaals nodig voor UTF-8. Ahoewel de meeste stringfuncties als `strpos()` en `strlen()`, hebben geen speciale aandacht nodig, deze functies hebben meestal een `mb_*` tegenhanger: als voorbeeld `mb_strpos()` en `mb_strlen()`. Deze `mb_*` strings zijn gemaakt voor u en beschikbaar via de [Multibyte String Extensie], en zijn specifiek ontworpen voor het gebruik met Unicode strings.
 
-You must use the `mb_*` functions whenever you operate on a Unicode string. For example, if you use `substr()` on a
-UTF-8 string, there's a good chance the result will include some garbled half-characters. The correct function to use
-would be the multibyte counterpart, `mb_substr()`.
+U moet de `mb_*` functies gebruiken waneer u een werkt met een Unicode-tekenreeks, Bijvoorbeeld, als u `substr()` gebruikt op een UTF-8 tekenreeks, dan is er een grote kans dat het resultaat een aantal onleesbaar halve karakters bevat. De juiste manier om het te gebruiken is de tegenhanger met multibyte ondersteuning namenlijk `mb_substr()`.
 
-The hard part is remembering to use the `mb_*` functions at all times. If you forget even just once, your Unicode
-string has a chance of being garbled during further processing.
+Het moeilijke deel is onthouden dat u de `mb_*` functies ten alle tijde moet gebruiken. Als u het maar een keer vergeet dan is u Unicode string niet goed verwerkt, en daardoor dus onleesbaar en onmogelijk om (juist) verder te verwerken.
 
-Not all string functions have an `mb_*` counterpart. If there isn't one for what you want to do, then you might be out
-of luck.
+Niet alle string functies hebben een `mb_*` tegenhanger. Als er niet een is voor wat je wilt doen, dan heeft u helaas pech.
 
-You should use the `mb_internal_encoding()` function at the top of every PHP script you write (or at the top of your
-global include script), and the `mb_http_output()` function right after it if your script is outputting to a browser.
-Explicitly defining the encoding of your strings in every script will save you a lot of headaches down the road.
+U moet de `mb_internal_encoding()` functie in het begin van elk PHP-script zetten (of in de top van een bestand wat u included/required), en de `mb_http_output()` functie moet u uitvoeren zodra u de code een uitvoer naar de browser stuurt.
+Expliciet definiëren van de codering van de strings bespaart u een hoop hoofdpijn gaande de weg.
 
-Additionally, many PHP functions that operate on strings have an optional parameter letting you specify the character
-encoding. You should always explicitly indicate UTF-8 when given the option. For example, `htmlentities()` has an
-option for character encoding, and you should always specify UTF-8 if dealing with such strings. Note that as of PHP 5.4.0, UTF-8 is the default encoding for `htmlentities()` and `htmlspecialchars()`.
+Bovendien zijn er veel PHP-functies voor verwerken van strings, die een optionele parameter hebben zodat u de teken 
+codering kan opgeven. U moet altijd expliciet UTF-8 aangeven als de optie. Bijvoorbeeld, `htmlentities()` heeft een optie voor tekencodering, en je moet altijd UTF-8 te geven als het omgaan met dergelijke strings. Merk op dat met ingang van PHP 5.4.0, UTF-8 de standaard codering voor `htmlentities ()` en `htmlspecialchars ()` is.
 
-Finally, If you are building an distributed application and cannot be certain that the `mbstring` extension will be
-enabled, then consider using the [patchwork/utf8] Composer package. This will use `mbstring` if it is available, and
-fall back to non UTF-8 functions if not.
+Tot slot, als u een applicatie uitbrengt is het niet zeker dat alle systemen de `mbstring` extensie geladen hebben, Overweeg dan om het [patchwork/utf8] Composer pakket te gebruiken. Deze gebruikt de `mbstring` extensie als deze beschikbaar is en valt anders terug op niet-specifiek voor UTF-8 functies.
 
-[Multibyte String Extension]: http://php.net/book.mbstring
+[Multibyte String Extensie]: http://php.net/book.mbstring
 [patchwork/utf8]: https://packagist.org/packages/patchwork/utf8
 
-### UTF-8 at the Database level
+### UTF-8 op Database niveau
 
-If your PHP script accesses MySQL, there's a chance your strings could be stored as non-UTF-8 strings in the database
-even if you follow all of the precautions above.
+Als uw PHP-script toegang tot MySQL heeft, er is een kans dat je stings kan worden opgeslagen als niet-UTF-8 strings in de database, zelfs als u al het bovenstaande voorzorgsmaatregelen gevolgd.
 
-To make sure your strings go from PHP to MySQL as UTF-8, make sure your database and tables are all set to the
-`utf8mb4` character set and collation, and that you use the `utf8mb4` character set in the PDO connection string. See
-example code below. This is _critically important_.
+Om er zeker van te zijn dat u PHP strings in MySQL als UTF-8 worden opgeslagen, wees er dan zeker van dat uw database en tabellen zijn ingesteld op de `utf8mb4` karakter set, En dat u de `utf8mb4` heeft meegegeven aan uw PDO verbindingsstring. Zie de voorbeelden hier beneden dit is _Erg Belangrijk_
 
-Note that you must use the `utf8mb4` character set for complete UTF-8 support, not the `utf8` character set! See
-Further Reading for why.
+Merk op dat u de `utf8mb4` tekenset voor volledige UTF-8 ondersteuning, en niet de` utf8` tekenset moet gebruiken! Zie Verderop waarom.
 
-### UTF-8 at the browser level
+### UTF-8 op browser niveau
 
-Use the `mb_http_output()` function to ensure that your PHP script outputs UTF-8 strings to your browser.
+Gebruik de `mb_http_output()` functie om ervoor te zorgen dat uw PHP-script uistuurd als UTF-8 strings in uw browser.
 
-The browser will then need to be told by the HTTP response that this page should be considered as UTF-8. The historic
-approach to doing that was to include the [charset `<meta>` tag](http://htmlpurifier.org/docs/enduser-utf8.html) in
-your page's `<head>` tag. This approach is perfectly valid, but setting the charset in the `Content-Type` header is
-actually [much faster](https://developers.google.com/speed/docs/best-practices/rendering#SpecifyCharsetEarly).
+De browser moet door de HTTP-response verteld worden dat deze pagina UTF-8 is, vroeger deed men dat via de [charset `<meta>` tag](http://htmlpurifier.org/docs/enduser-utf8.html) in de `<head>` tag van uw pagina. Dit is een correcte manier maar om de `Content-Type` in te stellen in de HTTP-header is [stukken sneller (engels)](https://developers.google.com/speed/docs/best-practices/rendering#SpecifyCharsetEarly).
 
 {% highlight php %}
 <?php
-// Tell PHP that we're using UTF-8 strings until the end of the script
+// Vertel het PHP dat wij UTF-8 strings gebruiken tot het einde van het script
 mb_internal_encoding('UTF-8');
  
-// Tell PHP that we'll be outputting UTF-8 to the browser
+// Vertel PHP dat we UTF-8 naar de browser sturen
 mb_http_output('UTF-8');
  
-// Our UTF-8 test string
+// Onze UTF-8 test string 
 $string = 'Êl síla erin lû e-govaned vîn.';
  
-// Transform the string in some way with a multibyte function
-// Note how we cut the string at a non-Ascii character for demonstration purposes
+// Transformeren de string op een bepaalde manier met een multibyte-functie
+// Merk op hoe we snijden de string op een niet-ASCII-teken voor demonstratiedoeleinden
 $string = mb_substr($string, 0, 15);
  
-// Connect to a database to store the transformed string
-// See the PDO example in this document for more information
-// Note the `charset=utf8mb4` in the Data Source Name (DSN)
+// Verbinding maken met een database om de getransformeerde reeks op te slaan
+// Zie de PDO voorbeeld in dit document voor meer informatie
+// Let op de `charset = utf8mb4` in de Data Source Name (DSN)
 $link = new PDO(
-    'mysql:host=your-hostname;dbname=your-db;charset=utf8mb4',
-    'your-username',
-    'your-password',
+    'mysql:host=uw-hostname;dbname=uw-db;charset=utf8mb4',
+    'uw-gebruikersnaam',
+    'uw-wachtwoord',
     array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_PERSISTENT => false
     )
 );
  
-// Store our transformed string as UTF-8 in our database
-// Your DB and tables are in the utf8mb4 character set and collation, right?
+// Opslaan van onze getransformeerde string als UTF-8 in onze database
+// Uw DB en tabellen zijn in de utf8mb4 tekenset, toch?
 $handle = $link->prepare('insert into ElvishSentences (Id, Body) values (?, ?)');
 $handle->bindValue(1, 1, PDO::PARAM_INT);
 $handle->bindValue(2, $string);
 $handle->execute();
  
-// Retrieve the string we just stored to prove it was stored correctly
+// Ophalen van de string om te bewijzen het was juist opgeslagen
 $handle = $link->prepare('select * from ElvishSentences where Id = ?');
 $handle->bindValue(1, 1, PDO::PARAM_INT);
 $handle->execute();
  
-// Store the result into an object that we'll output later in our HTML
+// Bewaar het resultaat in een object dat we later in onze HTML zetten
 $result = $handle->fetchAll(\PDO::FETCH_OBJ);
 
 header('Content-Type: text/html; charset=UTF-8');
@@ -113,12 +95,12 @@ header('Content-Type: text/html; charset=UTF-8');
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>UTF-8 test page</title>
+        <title>UTF-8 test pagina</title>
     </head>
     <body>
         <?php
-        foreach($result as $row){
-            print($row->Body);  // This should correctly output our transformed UTF-8 string to the browser
+        foreach($result as $row) {
+            print($row->Body); // Dit moet de juiste verwerking van onze getransformeerde UTF-8-tekenreeks naar de browser moeten zijn
         }
         ?>
     </body>
@@ -126,7 +108,7 @@ header('Content-Type: text/html; charset=UTF-8');
 {% endhighlight %}
 
 ### Lees meer
-_De artikelene hieronder zijn Engelstalig_
+_De artikelen hieronder zijn Engelstalig_
 
 * [PHP Manual: String Operations](http://php.net/language.operators.string)
 * [PHP Manual: String Functions](http://php.net/ref.strings)
