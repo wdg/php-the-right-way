@@ -13,7 +13,13 @@ online user group meetings with presentations by some of the top speakers in the
 everyone who supports a more diverse community. PHPWomen provide a network for support, mentorship and education, and
 generally promote the creating of a "female friendly" and professional atmosphere.
 
-[Read about User Groups on the PHP Wiki][php-wiki]
+Speciale vermelding moet worden gemaakt van twee internationale gebruikersgroepen: [NomadPHP] en [PHPWomen]. [NomadPHP] biedt twee keer per maand
+online gebruikersgroep bijeenkomsten met presentaties van enkele van de beste sprekers in de PHP-gemeenschap.
+[PHPWomen] is een niet-exclusieve groep gebruikers die oorspronkelijk gericht op de vrouwen in de PHP wereld. Het lidmaatschap staat open voor
+iedereen die een meer diverse gemeenschap ondersteunt. PHPWomen bieden een netwerk voor ondersteuning, mentorschap en onderwijs, en
+over het algemeen te bevorderen het creëren van een 'vrouwvriendelijke' en professionele sfeer.
+
+[Lees meer over gebruikersgroepen op de PHP Wiki _(engels)][php-wiki]
 
 [google]: https://www.google.com/search?q=php+user+group+near+me
 [meetup]: http://www.meetup.com/find/
