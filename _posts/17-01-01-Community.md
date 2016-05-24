@@ -4,14 +4,14 @@ anchor: community
 
 # Gemeenschap {#community_title}
 
-The PHP community is as diverse as it is large, and its members are ready and willing to support new PHP programmers.
-Consider joining your local PHP user group (PUG) or attending larger PHP conferences to learn more about the best
-practices shown here. You can hang out on IRC in the #phpc channel on [irc.freenode.com][php-irc] and follow the
-[@phpc][phpc-twitter] twitter account. Get out there, meet new developers, learn new topics, and above all, make new
-friends! Other community resources include the Google+ PHP [Programmer community][php-programmers-gplus] and
-[StackOverflow][php-so].
+De PHP-gemeenschap is net zo divers als het groot is, en haar leden zijn bereid om nieuwe PHP-programmeurs te ondersteunen.
+Overwegen toetreding tot de lokale PHP gebruikersgroep (PUG) of het bijwonen van een grotere PHP conferenties om meer informatie over de beste te leren
+praktijken hier afgebeeld. U kunt op IRC kijken in het #phpc kanaal op [irc.freenode.com][php-irc] en het [@phpc][phpc-twitter] twitter account volgen. 
+Wegwezen daar, ontmoet nieuwe ontwikkelaars, leren nieuwe onderwerpen, en vooral, maak nieuwe
+vrienden! Andere communautaire middelen onder meer de Google+ PHP [Programmeur gemeenschap _(Engels)_][php-programmers-gplus] en
+[StackOverflow _(Engels)][php-so].
 
-[Read the Official PHP Events Calendar][php-calendar]
+[Lees de officiele PHP evenementenkalender _(engels)_][php-calendar]
 
 
 [php-irc]: http://webchat.freenode.net/?channels=phpc
