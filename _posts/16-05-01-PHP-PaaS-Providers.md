@@ -5,8 +5,6 @@ anchor:  php_paas_providers
 
 ## PHP PaaS Providers {#php_paas_providers_title}
 
-?
-
 * [PagodaBox](https://pagodabox.com/)
 * [AppFog](https://appfog.com/)
 * [Heroku](https://devcenter.heroku.com/categories/php)
@@ -19,5 +17,3 @@ anchor:  php_paas_providers
 * [Windows Azure](http://www.windowsazure.com/)
 * [Google App Engine](https://developers.google.com/appengine/docs/php/gettingstarted/)
 * [Jelastic](http://jelastic.com/)
-
-?
