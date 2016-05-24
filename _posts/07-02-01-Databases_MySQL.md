@@ -4,23 +4,20 @@ title:   MySQL Extension
 anchor:  mysql_extension
 ---
 
-## MySQL Extension {#mysql_extension_title}
+## MySQL Extensie {#mysql_extension_title}
 
-The [mysql] extension for PHP is incredibly old and has superseded by two other extensions: 
+ 
+De [mysql] extensie voor PHP is verschrikkelijk oud en is vervangen voor 2 andere extensies:
 
 - [mysqli]
 - [pdo]
 
-Not only did development stop long ago on [mysql], but it was [deprecated as of PHP 5.5.0]
-[mysql_deprecated], and **has been [officially removed in PHP 7.0][mysql_removed]**.
+Niet alleen is de ontwikkeling lang geleden gestopt, maar het is [verouderd in PHP 5.5.0][mysql_deprecated], en **[verwijderd in PHP 7.0][mysql_removed]**.
 
-To save digging into your `php.ini` settings to see which module you are using, one option is to search for `mysql_*` 
-in your editor of choice. If any functions such as `mysql_connect()` and `mysql_query()` show up, then `mysql` is 
-in use.
+Om graven in `php.ini` te besparen om de module te zoeken, de beste optie is om te zoeken naar `mysql_*` in uw code en in de editor van uw keuze. Als u functies als `mysql_connect()` en/of `mysql_query()` komen voor, dan is de `mysql` extensie in gebruik.
 
-Even if you are not using PHP 7.0 yet, failing to consider this upgrade as soon as possible will lead to greater 
-hardship when the PHP 7.0 upgrade does come about. The best option is to replace mysql usage with [mysqli] or [PDO] in 
-your applications within your own development schedules so you won't be rushed later on.
+Zelfs als u PHP 7.0 nog niet gebruikt, is er een gevaar dat uw code niet meer werkt zodra u PHP 7.0 of hoger gaat gebruiken.
+De beste optie is om uw `mysql_*` functies te vervangen voor [mysqli] of [pdo] functies te vervangen, zodat u later geen problemen heeft als u *moet* updaten.
 
 **If you are upgrading from [mysql] to [mysqli], beware lazy upgrade guides that suggest you can simply find and replace `mysql_*` with `mysqli_*`. Not only is that a gross oversimplification, it misses out on the advantages that mysqli provides, such as parameter binding, which is also offered in [PDO][pdo].**
 
