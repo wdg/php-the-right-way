@@ -17,12 +17,12 @@ Niet alleen is de ontwikkeling lang geleden gestopt, maar het is [verouderd in P
 Om graven in `php.ini` te besparen om de module te zoeken, de beste optie is om te zoeken naar `mysql_*` in uw code en in de editor van uw keuze. Als u functies als `mysql_connect()` en/of `mysql_query()` komen voor, dan is de `mysql` extensie in gebruik.
 
 Zelfs als u PHP 7.0 nog niet gebruikt, is er een gevaar dat uw code niet meer werkt zodra u PHP 7.0 of hoger gaat gebruiken.
-De beste optie is om uw `mysql_*` functies te vervangen voor [mysqli] of [pdo] functies te vervangen, zodat u later geen problemen heeft als u *moet* updaten.
+De beste optie is om uw `mysql_*` functies te vervangen voor [mysqli] of [PDO][pdo] functies te vervangen, zodat u later geen problemen heeft als u *moet* updaten.
 
-**If you are upgrading from [mysql] to [mysqli], beware lazy upgrade guides that suggest you can simply find and replace `mysql_*` with `mysqli_*`. Not only is that a gross oversimplification, it misses out on the advantages that mysqli provides, such as parameter binding, which is also offered in [PDO][pdo].**
+**Als u upgraded van [mysql] naar [mysqli], pasop met het simpelweg vervangen van `mysql_*` met `mysqli_*` u loopt dan een hoop voordelen mis zoals parameter binding, wat ook ondersteund is in [PDO][pdo].**
 
-* [PHP: Choosing an API for MySQL][mysql_api]
-* [PDO Tutorial for MySQL Developers][pdo4mysql_devs]
+* [PHP: Choosing an API for MySQL _(Engels)_][mysql_api]
+* [PDO Tutorial for MySQL Developers _(Engels)_][pdo4mysql_devs]
 
 [mysql]: http://php.net/mysql
 [mysql_deprecated]: http://php.net/migration55.deprecated
