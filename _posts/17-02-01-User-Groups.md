@@ -3,12 +3,9 @@ isChild: true
 anchor:  user_groups
 ---
 
-## PHP User Groups {#user_groups_title}
+## PHP Gebruikers groepen {#user_groups_title}
 
-If you live in a larger city, odds are there's a PHP user group nearby. You can easily find your local PUG at
-the [usergroup-list at php.net][php-uglist] which is based upon [PHP.ug][php-ug]. Alternate sources might be
-[Meetup.com][meetup] or a search for ```php user group near me``` using your favourite search engine
-(i.e. [Google][google]). If you live in a smaller town, there may not be a local PUG; if that's the case, start one!
+Als u in een grotere stad woont, is er vaak een PHP gebruikersgroep in de buurt. u kan uw PUG (PHP User Group) vinden op [usergroup-list @ php.net][php-uglist] wat gebaseerd is op [PHP.ug][php-ug]. Alternatieve opties zijn ```php user group near me``` op [Meetup.com][meetup] (o.a. [AmsterdamPHP][AmsterdamPHP]) of via een zoekmachine als [Google][google]. als u in een kleine stad of dorp woont dan moet u misschien uitwijken naar een van de grotere steden, of zelf een gebruikersgroep starten!
 
 Special mention should be made of two global user groups: [NomadPHP] and [PHPWomen]. [NomadPHP] offers twice monthly
 online user group meetings with presentations by some of the top speakers in the PHP community.
@@ -25,3 +22,4 @@ generally promote the creating of a "female friendly" and professional atmospher
 [PHPWomen]: http://phpwomen.org/
 [php-wiki]: https://wiki.php.net/usergroups
 [php-uglist]: http://php.net/ug.php
+[AmsterdamPHP]: http://www.meetup.com/AmsterdamPHP/
